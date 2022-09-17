@@ -1,5 +1,6 @@
 {
     "name": "monjur/bkash",
+    "description": "This package easy to bkash implementation your project for laravel",
     "type": "library",
     "license": "MIT",
     "authors": [
