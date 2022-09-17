@@ -22,7 +22,7 @@ class BkashPayController extends Controller
             ]);
         }
         $orders = Order::all();
-        return view('bkashpay::Bkash.bkash-pay', compact('orders'));
+        return view('bkash::Bkash.bkash-pay', compact('orders'));
     }
 
     public function token()
@@ -82,7 +82,7 @@ class BkashPayController extends Controller
 
     protected function get_config_file()
     {
-        // $path = config_path() . "/bkashpay.json";
+        // $path = config_path() . "/bkash.json";
         $path = $this->bkashJson();
         return json_decode(file_get_contents($path), true);
     }
