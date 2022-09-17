@@ -42,11 +42,13 @@
                         <td>{{ $order->invoice }}</td>
                         <td>{{ $order->trxID }}</td>
                         <td>{{ $order->status }}</td>
+                        <td>
                         @if($order->status == 'Pending')
                         <button class="btn btn-primary" id="bKash_button">Pay with bKash</button>
                     @else
                         <h4><span class="badge badge-success">Paid</span></h4>
                     @endif
+                </td>
                     </tr>
                 @endforeach
                 </tbody>

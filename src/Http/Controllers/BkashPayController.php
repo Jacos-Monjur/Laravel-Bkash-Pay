@@ -18,7 +18,7 @@ class BkashPayController extends Controller
                 'amount' => 100 . $i,
                 'invoice' => 'BBL-22179' . $i,
                 'trxID' => '',
-                'status' => '0'
+                'status' => 'Pending'
             ]);
         }
         $orders = Order::all();
