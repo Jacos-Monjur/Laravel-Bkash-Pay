@@ -1,0 +1,20 @@
+{
+    "name": "monjur/bkash",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Monjur",
+            "email": "jacosmonjurajad@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "monjur\\bkash\\BkashServiceProvider"
+            ]
+        }
+    }
+}
