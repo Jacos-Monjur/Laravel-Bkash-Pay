@@ -16,7 +16,7 @@ class BkashServiceProvider extends ServiceProvider
         // $this->mergeConfigFrom(__DIR__ . '/config/bkashpay.json', 'bkash');
         $this->publishes([
             // __DIR__ . '/config/bkashpay.json' => config_path('bkashpay.json'),
-            __DIR__ . '/resources/views' => resource_path('views/Bkash')
+            __DIR__ . '/views' => resource_path('views/Bkash')
         ]);
     }
 
