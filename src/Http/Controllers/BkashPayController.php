@@ -41,8 +41,8 @@ class BkashPayController extends Controller
 
         $_SESSION['token'] = $idtoken;
 
-        $strJsonFileContents = file_get_contents($this->bkashJson());
-        $array = json_decode($strJsonFileContents, true);
+        // $strJsonFileContents = file_get_contents($this->bkashJson());
+        // $array = json_decode($strJsonFileContents, true);
 
         $array = $this->get_config_file();
 
@@ -89,7 +89,7 @@ class BkashPayController extends Controller
 
     protected function get_config_file()
     {
-        $path = storage_path('/app/public/bkash.json');
+        $path = resource_path('/views/Bkash/bkash.json');
         // $path = $this->bkashJson();
         return json_decode(file_get_contents($path), true);
     }
