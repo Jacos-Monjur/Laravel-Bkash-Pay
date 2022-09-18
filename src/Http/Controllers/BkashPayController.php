@@ -25,6 +25,13 @@ class BkashPayController extends Controller
         return view('bkash::Bkash.bkash-pay', compact('orders'));
     }
 
+    public function show($id)
+    {
+        $order = Order::find($id);
+
+        return view('bkash::Bkash.load', compact('order'));
+    }
+
     public function token()
     {
         session_start();
